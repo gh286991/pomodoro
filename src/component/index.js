@@ -14,6 +14,7 @@ class Index extends Component {
 
 
     render() {
+        console.log('test')
       return (
         <div>
          HI~~~ Index here  !!
