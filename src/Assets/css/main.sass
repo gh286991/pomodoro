@@ -1,0 +1,92 @@
+$border_color : #A7A7A7
+$pink_color: #FDB9B9
+$deep_pink: #FF8D8D
+    
+html,body
+    margin: 0px
+    padding: 0px
+    height: 100%
+    // border: 3px solid black
+
+.App
+    // border: 3px solid red
+    margin: 0px
+    padding: 0px
+    width: 100%
+    height: 100%
+    position: absolute
+    text-align: left
+
+.side
+    // border: 1px solid blue
+    display: inline-block
+    vertical-align: top
+    color: $pink_color
+    font-size: 13px
+    white-space: nowrap
+    width: 4.5%
+    margin-top: 35%
+    transform: rotate(-90deg)
+.main
+    border: 1px solid $border_color 
+    display: inline-block
+    height: 99.6%
+    width: 95%
+
+.todoNow
+    // position: relative
+    display: inline-block
+    border: 1px solid blue
+    color: $deep_pink
+    width: 430px
+    font-size: 40px
+    font-weight: bold
+    margin-top: 15%
+    // margin-left: -44%
+    .drop
+        border: 1px solid green
+        margin-left: 30px
+        width: 50px
+
+
+.circleProgress_wrapper
+    width: 200px
+    height: 200px
+    margin: 50px auto
+    position: relative
+    border: 1px solid blue
+    .wrapper
+        width: 100px
+        height: 200px
+        position: absolute
+        top: 0
+        // overflow: hidden
+    .right
+        right: 0
+        border: 1px solid red
+    .left
+        left: 0
+        border: 1px solid black
+
+    .circleProgress
+        width: 160px
+        height: 160px
+        // border: 20px solid blue
+        border-radius: 50%
+        position: absolute
+        top: 0
+        // transform: rotate(60deg)
+    .rightcircle
+        border-top: 20px solid yellow
+        border-right: 20px solid yellow
+        right: 0
+
+#svg #circle 
+  stroke-dashoffset: 0
+  transition: stroke-dashoffset 1s linear
+  stroke: #666
+  stroke-width: 1em
+
+#svg #bar 
+  stroke: #FF9F1E
+  stroke-width: 1em
