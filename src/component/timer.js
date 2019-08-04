@@ -35,9 +35,6 @@ class Timer extends Component {
     render() {
       const { deg, r, strokeDashoffset } = this.state;
 
-      const style = {
-        transform: `rotate(${deg}deg)`,
-      };
       return (
         <div className="circleProgress_wrapper">
           <svg id="svg" width="200" height="200" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
